@@ -1,0 +1,412 @@
+* {
+    font-family: sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 0;
+    background: #c1e7f9;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.front-img img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 19%;
+    position: relative;
+}
+
+.nav-bar {
+    display: flex;
+    padding: 30px 34px;
+    position: relative;
+}
+
+/* ^ here we write padding like this it means---->
+                     top and bottom padding are 40px
+                     right and left padding are 120px
+*/
+
+.nav-logo img {
+    width: 40px;
+}
+
+.nav-links {
+    flex: 1;
+}
+
+.nav-links ul {
+    margin-left: 50px;
+    display: inline;
+}
+
+.nav-links ul,
+li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 25px;
+}
+
+.nav-links ul,
+li,
+a {
+    color: darkred;
+    text-decoration: none;
+    font-size: 13px;
+    font-family: sans-serif;
+
+}
+
+/*The ::after selector inserts something after the content of each selected element(s).
+
+Use the content property to specify the content to insert.
+
+Use the ::before selector to insert something before the content.*/
+
+.nav-links ul li::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background: red;
+    display: block;
+    /*block==	Displays an element as a block element (like <p>). It starts on a new line, and takes up the whole width*/
+    margin: auto;
+}
+
+
+.nav-links ul li:hover::after {
+    width: 100%;
+    transition: 0.6s;
+    /*the CSS property you want to add an effect to
+      the duration of the effect
+    
+    Note: If the duration part is not specified, the transition will have no effect, because the default value is 0.
+    */
+}
+
+.btn {
+    padding: 10px 20px;
+    border: 0;
+    background: red;
+    font-weight: bold;
+    cursor: pointer;
+    color: #fff;
+    margin-top: 15px;
+}
+
+.nav-links,
+.btn {
+    float: right;
+}
+
+.banner-title {
+    margin: 80px 80px;
+    color: darkred;
+    position: absolute;
+}
+
+.banner-title h1 {
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.btn1 {
+    padding: 10px 20px;
+    border: 0;
+    background: red;
+    font-weight: bold;
+    cursor: pointer;
+    color: #fff;
+}
+
+.banner-title h1 span {
+    color: red;
+}
+
+.vertical-bar {
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.social-icon {
+    display: block;
+    margin-top: 200px;
+
+
+}
+
+.a {
+    display: flex;
+    background: #c1e7f9;
+    height: 50px;
+    width: 50px;
+    margin: 0 15px;
+    border-radius: 4px;
+    justify-content: center;
+    justify-items: center;
+    text-decoration: none;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15), -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+    border: 1px solid rgba(0, 0, 0, 0);
+    transition: transform 0.5s;
+    margin-bottom: 10px;
+}
+
+#i {
+    font-size: 35px !important;
+    color: #777;
+    transition: transform 0.5s;
+    margin: 10px;
+
+
+}
+
+.a:hover {
+    box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2), inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7), -0.5px -0.5px 0px rgba(255, 255, 255, 1), 0.5px 0.5px 0px rgba(0, 0, 0, 0.15), 0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    transform: translateY(2px);
+}
+
+.prev {
+
+    position: absolute;
+    padding-left: 1100px;
+    padding-top: 360px;
+    margin: 30px;
+    text-decoration: none;
+
+}
+
+.pre {
+    background: #fff;
+    padding: 10px;
+    color: black;
+    border-radius: 4px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.next {
+    background: red;
+    padding: 10px;
+    border-radius: 4px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.new-img {
+    padding-left: 1100px;
+    position: absolute;
+    justify-content: center;
+    padding-right: 100px;
+    padding-top: 200px
+}
+
+.new-img img {
+    height: 90px;
+    justify-content: center;
+    border-radius: 10px
+}
+
+.note {
+    font-size: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    color: red;
+
+}
+
+.location {
+    padding-left: 200px;
+    font-size: 11px;
+}
+
+.location span {
+    color: red;
+}
+
+@media (max-width:1000px) {
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 0;
+        background: #c1e7f9;
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+        overflow-x: hidden;
+
+    }
+
+    .front-img img {
+        height: 50vh;
+        width: auto;
+
+    }
+
+    .btn {
+        padding: 60px 100px;
+        margin-left: 820px;
+        font-size: 30px;
+        border: 0;
+        background: red;
+        font-weight: bold;
+        cursor: pointer;
+        color: #fff;
+        margin-top: 15px;
+        position: absolute;
+    }
+
+    .nav-logo img {
+        width: 0px;
+
+    }
+
+    .nav-links ul li {
+        font-size: 0;
+        display: block;
+
+    }
+
+    .banner-title {
+        margin: 80px 80px;
+        color: darkred;
+        position: absolute;
+        margin-top: 1000px;
+        padding-left: 10px
+    }
+
+    .banner-title h1 {
+        font-size: 150px;
+        margin-bottom: 30px;
+    }
+
+    .btn1 {
+        padding: 30px 50px;
+        border: 0;
+        background: red;
+        font-weight: bold;
+        cursor: pointer;
+        color: #fff;
+        font-size: 20px;
+    }
+
+    .banner-title h1 span {
+        color: red;
+    }
+
+    .vertical-bar {
+        height: 100%;
+        top: 0;
+        left: 0;
+        position: absolute;
+    }
+
+    .banner-title p {
+        font-size: 30px;
+    }
+
+    .social-icon {
+        display: block;
+        margin-top: 500px;
+
+
+    }
+
+    .a {
+        display: flex;
+        background: #c1e7f9;
+        height: 100px;
+        width: 100px;
+        margin: 0 15px;
+        border-radius: 10px;
+        justify-content: center;
+        justify-items: center;
+        text-decoration: none;
+        box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15), -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+        border: 1px solid rgba(0, 0, 0, 0);
+        transition: transform 0.5s;
+        margin-bottom: 10px;
+    }
+
+    #i {
+        font-size: 50px !important;
+        color: #777;
+        transition: transform 0.5s;
+        margin-top: 24px;
+
+
+
+    }
+
+    .a:hover {
+        box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2), inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7), -0.5px -0.5px 0px rgba(255, 255, 255, 1), 0.5px 0.5px 0px rgba(0, 0, 0, 0.15), 0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        transform: translateY(2px);
+    }
+
+    .prev {
+
+        position: absolute;
+        padding-left: 1100px;
+        padding-top: 960px;
+        margin: 30px;
+        text-decoration: none;
+
+
+    }
+
+    .pre {
+        background: #fff;
+        padding: 10px;
+        color: black;
+        border-radius: 10px;
+        padding-right: 50px;
+        padding-left: 50px;
+
+    }
+
+    .next {
+        background: red;
+        padding: 10px;
+        border-radius: 10px;
+        padding-right: 50px;
+        padding-left: 50px;
+
+    }
+
+    .new-img {
+        padding-left: 820px;
+        position: absolute;
+        justify-content: center;
+        padding-right: 100px;
+        padding-top: 500px
+    }
+
+    .new-img img {
+        height: 20vh;
+        justify-content: center;
+        border-radius: 20px;
+    }
+
+    .note {
+        font-size: 30px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        color: red;
+
+    }
+
+    .location {
+        padding-left: 150px;
+        font-size: 20px;
+        float: top;
+    }
+}
